@@ -2,7 +2,7 @@
 
 Alexander Fábio da Silva - alexanderfabio903@gmail.com
 Anthony Efraim Guerra de Lima - formalanthonyefraim@gmail.com
-3
+Artur Dantas Guimarães - arturguimaraes82@gmail.com
 4
 5
 
