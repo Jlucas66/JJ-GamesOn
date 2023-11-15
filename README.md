@@ -1,7 +1,7 @@
 # JJ-GamesOn
 
 Alexander Fábio da Silva - alexanderfabio903@gmail.com
-2
+Anthony Efraim Guerra de Lima - formalanthonyefraim@gmail.com
 3
 4
 5
