@@ -11,6 +11,7 @@ Integrantes do grupo
 Descrição geral do projeto
 
   Nosso projeto será de uma loja virtual de videogames, onde o usuário entrará visando comprar um jogo, no qual será disponibilizado ao mesmo por meio de um código de resgate. Este programa é ideal para gamers em busca do último lançamento do mercado ou jogadores casuais em busca de jogos divertidos.
+  
   Serviços importantes são: cadastro, login, ferramenta de busca, cadastro das informações do cliente, avaliação de jogos comprados e histórico de compras. O usuário poderá buscar jogos, adicionar itens a um carrinho de compras e finalizar o pedido.
 
 Requisitos do projeto
