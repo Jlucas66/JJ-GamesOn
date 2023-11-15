@@ -15,11 +15,11 @@ Descrição geral do projeto
 
 Requisitos do projeto
 
-REQ1 - O sistema deve controlar o acesso através de login e senha. Os usuários do sistema serão do tipo cliente e também do tipo adminstrador.
-REQ2 - O sistema deve permitir a venda de jogos previamente cadastrados e salvá-los em um histórico de compras por cliente. Cada venda de jogos deve ser associada a um cliente único.
-REQ3 - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de jogos, e essa ação pode ser feita pelo adminstrador.
-REQ4 - O sistema deve permitir a manutenção do reposítório de jogos (estoque) por um usuário admnistrador.
-REQ5 - O sistema deve permitir que o administrador consulte o relatório de vendas em determinado período.
-REQ6 - O sistema deve permitir que o cliente consulte o seu próprio histórico de compras.
-REQ7 - O sistema deve permitir que o cliente busque jogos por diversos parâmetros diferentes, como gênero.
-REQ8 - O sistema deve permitir que o cliente avalie jogos, e salvá-las em um histórico de avaliações de cada jogo.
+* **REQ1** - O sistema deve controlar o acesso através de login e senha. Os usuários do sistema serão do tipo cliente e também do tipo adminstrador.
+* **REQ2** - O sistema deve permitir a venda de jogos previamente cadastrados e salvá-los em um histórico de compras por cliente. Cada venda de jogos deve ser associada a um cliente único.
+* **REQ3** - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de jogos, e essa ação pode ser feita pelo adminstrador.
+* **REQ4** - O sistema deve permitir a manutenção do reposítório de jogos (estoque) por um usuário admnistrador.
+* **REQ5** - O sistema deve permitir que o administrador consulte o relatório de vendas em determinado período.
+* **REQ6** - O sistema deve permitir que o cliente consulte o seu próprio histórico de compras.
+* **REQ7** - O sistema deve permitir que o cliente busque jogos por diversos parâmetros diferentes, como gênero.
+* **REQ8** - O sistema deve permitir que o cliente avalie jogos, e salvá-las em um histórico de avaliações de cada jogo.
