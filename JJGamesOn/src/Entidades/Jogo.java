@@ -65,7 +65,7 @@ public class Jogo {
         this.codigoDeAtivacao = codigoDeAtivacao;
     }
 
-    public void Media(){
+    public void media(){
 
     }
 }
