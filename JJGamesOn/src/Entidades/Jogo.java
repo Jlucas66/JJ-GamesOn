@@ -2,6 +2,7 @@ package Entidades;
 
 public class Jogo {
     private String nome;
+    private double valor;
     private String desenvolvedora;
     private String genero;
     private String resumo;
@@ -23,8 +24,9 @@ public class Jogo {
         }
     }
 
-    public Jogo(String nome, String desenvolvedora, String genero, String resumo, double notaMetacritic, int codigoDeAtivacao) {
+    public Jogo(String nome, double valor, String desenvolvedora, String genero, String resumo, double notaMetacritic, int codigoDeAtivacao) {
         this.nome = nome;
+        this.valor = valor;
         this.desenvolvedora = desenvolvedora;
         this.genero = genero;
         this.resumo = resumo;
@@ -38,6 +40,14 @@ public class Jogo {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 
     public String getDesenvolvedora() {
