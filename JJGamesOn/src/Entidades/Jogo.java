@@ -24,7 +24,8 @@ public class Jogo {
         }
     }
 
-    public Jogo(String nome, double valor, String desenvolvedora, String genero, String resumo, double notaMetacritic, int codigoDeAtivacao) {
+    public Jogo(String nome, double valor, String desenvolvedora, String genero, String resumo,
+                double notaMetacritic, int codigoDeAtivacao, FaixaEtaria faixaEtaria) {
         this.nome = nome;
         this.valor = valor;
         this.desenvolvedora = desenvolvedora;
@@ -32,6 +33,7 @@ public class Jogo {
         this.resumo = resumo;
         this.notaMetacritic = notaMetacritic;
         this.codigoDeAtivacao = codigoDeAtivacao;
+        this.faixaEtaria = faixaEtaria;
     }
 
     public String getNome() {
@@ -90,7 +92,20 @@ public class Jogo {
         this.codigoDeAtivacao = codigoDeAtivacao;
     }
 
-    public void media(){
+    public FaixaEtaria getFaixaEtaria() {
+        return faixaEtaria;
+    }
 
+    public void setFaixaEtaria(FaixaEtaria faixaEtaria) {
+        this.faixaEtaria = faixaEtaria;
+    }
+
+    public double calcularDesconto(double percentualDesconto) {
+        if (percentualDesconto < 0 || percentualDesconto > 100) {
+            throw new IllegalArgumentException("O valor do desconto deve estar entre 0 e 100.");
+        }
+
+        double desconto = valor * (percentualDesconto / 100);
+        return valor - desconto;
     }
 }

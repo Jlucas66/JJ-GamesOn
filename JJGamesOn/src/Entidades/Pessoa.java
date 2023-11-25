@@ -1,14 +1,15 @@
 package Entidades;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.Period;
 
 public abstract class Pessoa {
     private String nome;
     private String email;
     private String senha;
-    private LocalDateTime dataNascimento;
+    private LocalDate dataNascimento;
 
-    public Pessoa(String nome, String email, String senha, LocalDateTime dataNascimento) {
+    public Pessoa(String nome, String email, String senha, LocalDate dataNascimento) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
@@ -39,11 +40,17 @@ public abstract class Pessoa {
         this.senha = senha;
     }
 
-    public LocalDateTime getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDateTime dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
+    public int calcularIdade(){
+        LocalDate dataAtual = LocalDate.now();
+        return Period.between(dataNascimento, dataAtual).getYears();
+    }
+
 }

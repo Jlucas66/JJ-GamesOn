@@ -1,11 +1,11 @@
 package Entidades;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Administrador extends Pessoa{
     private int chaveEspecial;
 
-    public Administrador(String nome, String email, String senha, LocalDateTime dataNascimento, int chaveEspecial) {
+    public Administrador(String nome, String email, String senha, LocalDate dataNascimento, int chaveEspecial) {
         super(nome, email, senha, dataNascimento);
         this.chaveEspecial = chaveEspecial;
     }
