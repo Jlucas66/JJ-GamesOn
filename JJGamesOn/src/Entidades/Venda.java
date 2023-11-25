@@ -17,6 +17,13 @@ public class Venda {
     public void adicionarItemVenda(ItemVenda novoItem){
         itensVenda.add(novoItem);
     }
-    public void calcularTotal() {
+    public double calcularTotal() {
+        double valorFinal = 0;
+        if(!itensVenda.isEmpty()){
+            for (ItemVenda venda: itensVenda) {
+                valorFinal += venda.getValorTotal();
+            }
+        }
+        return valorFinal;
     }
 }
