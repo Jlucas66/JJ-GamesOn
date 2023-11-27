@@ -15,8 +15,17 @@ public class Venda {
     }
 
     public void adicionarItemVenda(ItemVenda novoItem){
-        itensVenda.add(novoItem);
+        if(!itensVenda.contains(novoItem)){
+            itensVenda.add(novoItem);
+        }
     }
+
+    public void removerItemVenda(ItemVenda item){
+        if(itensVenda.contains(item)){
+            itensVenda.remove(item);
+        }
+    }
+
     public double calcularTotal() {
         double valorFinal = 0;
         if(!itensVenda.isEmpty()){
