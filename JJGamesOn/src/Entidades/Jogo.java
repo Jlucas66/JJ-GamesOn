@@ -1,5 +1,7 @@
 package Entidades;
 
+import java.util.ArrayList;
+
 public class Jogo {
     private String nome;
     private double valor;
@@ -9,6 +11,9 @@ public class Jogo {
     private double notaMetacritic;
     private int codigoDeAtivacao;
     private FaixaEtaria faixaEtaria;
+
+    //Meramente Ilustrativo
+    private ArrayList<Avaliacao> avaliacoes = new ArrayList<>();
 
     public enum FaixaEtaria {
         LIVRE(0), DEZ(10), DOZE(12), QUATORZE(14), DEZESSEIS(16), DEZOITO(18);
