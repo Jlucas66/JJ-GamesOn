@@ -15,20 +15,6 @@ public class Jogo {
     //Meramente Ilustrativo
     private ArrayList<Avaliacao> avaliacoes = new ArrayList<>();
 
-    public enum FaixaEtaria {
-        LIVRE(0), DEZ(10), DOZE(12), QUATORZE(14), DEZESSEIS(16), DEZOITO(18);
-
-        private final int idade;
-
-        public int getIdade() {
-            return idade;
-        }
-
-        FaixaEtaria(int idade) {
-            this.idade = idade;
-        }
-    }
-
     public Jogo(String nome, double valor, String desenvolvedora, String genero, String resumo,
                 double notaMetacritic, int codigoDeAtivacao, FaixaEtaria faixaEtaria) {
         this.nome = nome;
