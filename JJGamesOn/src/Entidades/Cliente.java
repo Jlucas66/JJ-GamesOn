@@ -2,20 +2,25 @@ package Entidades;
 
 import java.lang.reflect.Array;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Cliente extends Pessoa{
-    private Array historicoDeCompras;
+    private ArrayList<Venda> historicoDeCompras = new ArrayList<>();
 
-    public Cliente(String nome, String email, String senha, LocalDate dataNascimento, Array historicoDeCompras) {
+    public Cliente(String nome, String email, String senha, LocalDate dataNascimento) {
         super(nome, email, senha, dataNascimento);
-        this.historicoDeCompras = historicoDeCompras;
     }
 
-    public Array getHistoricoDeCompras() {
-        return historicoDeCompras;
-    }
 
-    public void setHistoricoDeCompras(Array historicoDeCompras) {
-        this.historicoDeCompras = historicoDeCompras;
+    // Esses códigos vão ficar nos repositorios, meramente ilustrativo
+    public void adicionarHistorico(Venda venda){
+        if(!historicoDeCompras.contains(venda)){
+            historicoDeCompras.add(venda);
+        }
+    }
+    public void removerHistorico(Venda venda){
+        if(historicoDeCompras.contains(venda)){
+            historicoDeCompras.remove(venda);
+        }
     }
 }
