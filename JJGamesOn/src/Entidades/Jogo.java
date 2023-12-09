@@ -91,12 +91,4 @@ public class Jogo {
         this.faixaEtaria = faixaEtaria;
     }
 
-    public double calcularDesconto(double percentualDesconto) {
-        if (percentualDesconto < 0 || percentualDesconto > 100) {
-            throw new IllegalArgumentException("O valor do desconto deve estar entre 0 e 100.");
-        }
-
-        double desconto = valor * (percentualDesconto / 100);
-        return valor - desconto;
-    }
 }

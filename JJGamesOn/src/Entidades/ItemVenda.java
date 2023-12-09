@@ -11,6 +11,15 @@ public class ItemVenda {
         valorTotal = jogo.getValor() * quantidade;
     }
 
+    public void aplicarDesconto(Promocao promocao){
+        if(promocao.getJogoEmPromocao().equals(jogo)){
+            valorTotal = promocao.calcularValorComDesconto() * quantidade;
+        }
+        else {
+            throw new IllegalArgumentException("O jogo não está em promoção.");
+        }
+    }
+
     public Jogo getJogo() {
         return jogo;
     }
