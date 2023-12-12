@@ -1,6 +1,6 @@
-package dados;
-import entidades.Jogo;
-public class RepositorioJogo {
+package br.ufrpe.JJGamesOn.dados;
+import br.ufrpe.JJGamesOn.entidades.Jogo;
+public class RepositorioJogo implements IRepositorioJogo{
 
     // atributos
 
@@ -14,13 +14,13 @@ public class RepositorioJogo {
 
         return inseriu;
     }
-/*  precisamos adicionar o atributo ID, acho
+//  precisamos adicionar o atributo ID, acho
 
     public Jogo obterJogoPorId(int ID){
-
-        return jogo;
+    Jogo c = null;
+        return c;
     }
-*/
+
     public boolean removerJogo(Jogo jogo){
         boolean removeu = false;
 
@@ -38,7 +38,7 @@ public class RepositorioJogo {
     }
 
 /*  num crud esse método é necessário, mas não sei como implementar com
-banco de dados
+banco de br.ufrpe.JJGamesOn.dados
     public void listarJogosDoBancoDeDados(??){
 
     }

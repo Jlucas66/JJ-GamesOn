@@ -1,4 +1,4 @@
-package entidades;
+package br.ufrpe.JJGamesOn.entidades;
 
 public class ItemVenda {
     private Jogo jogo;

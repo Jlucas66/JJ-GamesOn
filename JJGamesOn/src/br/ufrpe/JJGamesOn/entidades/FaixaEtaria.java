@@ -1,4 +1,4 @@
-package entidades;
+package br.ufrpe.JJGamesOn.entidades;
 
 public enum FaixaEtaria {
     LIVRE(0), DEZ(10), DOZE(12), QUATORZE(14), DEZESSEIS(16), DEZOITO(18);

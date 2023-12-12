@@ -1,6 +1,6 @@
-package dados;
+package br.ufrpe.JJGamesOn.dados;
 
-import entidades.Jogo;
+import br.ufrpe.JJGamesOn.entidades.Jogo;
 
 public interface IRepositorioJogo {
     boolean inserirJogo (Jogo jogo);

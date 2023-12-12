@@ -1,4 +1,4 @@
-package entidades;
+package br.ufrpe.JJGamesOn.entidades;
 
 import java.util.ArrayList;
 
