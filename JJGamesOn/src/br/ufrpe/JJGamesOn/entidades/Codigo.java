@@ -1,28 +1,34 @@
 package br.ufrpe.JJGamesOn.entidades;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Codigo {
-    private String chave;
+    private ArrayList<String> codigosGerados;
 
-    public Codigo() {
-        this.chave = gerarCodigo(10);
+    public Codigo(int quantidade) {
+        this.codigosGerados = gerarCodigos(quantidade);
     }
 
-    public String getChave() {
-        return chave;
+    public ArrayList<String> getCodigosGerados() {
+        return codigosGerados;
     }
 
-    private String gerarCodigo(int tamanho) {
-        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        StringBuilder codigo = new StringBuilder();
+    public static ArrayList<String> gerarCodigos(int quantidade) {
+        ArrayList<String> codigos = new ArrayList<>();
 
-        Random random = new Random();
-        for (int i = 0; i < tamanho; i++) {
-            int indice = random.nextInt(caracteres.length());
-            codigo.append(caracteres.charAt(indice));
+        for (int j = 0; j < quantidade; j++) {
+            String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            StringBuilder codigo = new StringBuilder();
+
+            Random random = new Random();
+            for (int i = 0; i < 10; i++) {
+                int indice = random.nextInt(caracteres.length());
+                codigo.append(caracteres.charAt(indice));
+            }
+
+            codigos.add(codigo.toString());
         }
-
-        return codigo.toString();
+        return codigos;
     }
 }
