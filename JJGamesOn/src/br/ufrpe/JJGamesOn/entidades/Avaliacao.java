@@ -1,16 +1,20 @@
 package br.ufrpe.JJGamesOn.entidades;
 
+import java.time.LocalDateTime;
+
 public class Avaliacao {
     private Cliente cliente;
     private Jogo jogo;
     private int nota;
     private String comentario;
+    private LocalDateTime data;
 
     public Avaliacao(Cliente cliente, Jogo jogo, int nota, String comentario) {
         this.cliente = cliente;
         this.jogo = jogo;
         this.nota = nota;
         this.comentario = comentario;
+        this.data = LocalDateTime.now();
     }
 
     public Cliente getCliente() {
@@ -43,5 +47,8 @@ public class Avaliacao {
 
     public void setComentario(String comentario) {
         this.comentario = comentario;
+    }
+    public LocalDateTime getData(){
+        return data;
     }
 }
