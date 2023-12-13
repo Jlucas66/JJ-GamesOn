@@ -1,15 +1,20 @@
 package br.ufrpe.JJGamesOn.entidades;
 
+import java.util.ArrayList;
+
 public class ItemVenda {
     private Jogo jogo;
     private int quantidade;
     private double valorTotal;
+    private ArrayList<String> codigos;
 
     public ItemVenda(Jogo jogo, int quantidade) {
         this.jogo = jogo;
         this.quantidade = quantidade;
         valorTotal = jogo.getValor() * quantidade;
+        this.codigos = Codigo.gerarCodigos(quantidade);
     }
+
 
     public void aplicarDesconto(Promocao promocao){
         if(promocao.getJogoEmPromocao().equals(jogo)){
@@ -38,5 +43,9 @@ public class ItemVenda {
 
     public double getValorTotal() {
         return valorTotal;
+    }
+
+    public ArrayList<String> getCodigos() {
+        return codigos;
     }
 }
