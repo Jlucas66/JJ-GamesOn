@@ -3,17 +3,19 @@ package br.ufrpe.JJGamesOn.entidades;
 import java.time.LocalDate;
 import java.time.Period;
 
-public abstract class Pessoa {
+public class Pessoa {
     private String nome;
     private String email;
     private String senha;
     private LocalDate dataNascimento;
+    private boolean ehAdm;
 
-    public Pessoa(String nome, String email, String senha, LocalDate dataNascimento) {
+    public Pessoa(String nome, String email, String senha, LocalDate dataNascimento, boolean ehAdm) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
         this.dataNascimento = dataNascimento;
+        this.ehAdm = ehAdm;
     }
 
     public String getNome() {
@@ -46,6 +48,10 @@ public abstract class Pessoa {
 
     public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+
+    public boolean getEhAdm(){
+        return ehAdm;
     }
 
     public int calcularIdade(){
