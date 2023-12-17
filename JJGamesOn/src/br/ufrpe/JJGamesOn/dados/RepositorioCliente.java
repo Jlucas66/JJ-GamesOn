@@ -1,7 +1,5 @@
 package br.ufrpe.JJGamesOn.dados;
 
-import br.ufrpe.JJGamesOn.entidades.Cliente;
-
 import java.util.ArrayList;
 
 public class RepositorioCliente implements IRepositorioCliente {
