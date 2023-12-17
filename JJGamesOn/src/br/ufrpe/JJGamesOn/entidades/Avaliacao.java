@@ -3,13 +3,13 @@ package br.ufrpe.JJGamesOn.entidades;
 import java.time.LocalDateTime;
 
 public class Avaliacao {
-    private Cliente cliente;
+    private Pessoa cliente;
     private Jogo jogo;
     private int nota;
     private String comentario;
     private LocalDateTime data;
 
-    public Avaliacao(Cliente cliente, Jogo jogo, int nota, String comentario) {
+    public Avaliacao(Pessoa cliente, Jogo jogo, int nota, String comentario) {
         this.cliente = cliente;
         this.jogo = jogo;
         this.nota = nota;
@@ -17,11 +17,11 @@ public class Avaliacao {
         this.data = LocalDateTime.now();
     }
 
-    public Cliente getCliente() {
+    public Pessoa getCliente() {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente(Pessoa cliente) {
         this.cliente = cliente;
     }
 
