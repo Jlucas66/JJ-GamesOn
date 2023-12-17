@@ -1,12 +1,14 @@
 package br.ufrpe.JJGamesOn.dados;
 
+import br.ufrpe.JJGamesOn.entidades.Pessoa;
+
 import java.util.ArrayList;
 
 public class RepositorioCliente implements IRepositorioCliente {
 
     // atributos
 
-    private ArrayList<Cliente> clientes;
+    private ArrayList<Pessoa> clientes;
     private static IRepositorioCliente instance;
 
     // construtores
@@ -23,41 +25,45 @@ public class RepositorioCliente implements IRepositorioCliente {
 
     // CRUD de cliente
 
-    public void inserirCliente(Cliente cliente) {
+    public void inserirCliente(Pessoa cliente) {
         if (cliente != null){
             clientes.add(cliente);
         }
 
     }
 
-    public Cliente obterClientePorId(int id) {
-        Cliente c = null;
-        for (Cliente cliente : clientes){
-            if (cliente.getIdCliente() == id){
-                c = cliente;
-            }
-        }
-        return c;
-    }
+    //Mexer dps pq não existe metodo de obter ID
 
-    public void removerCliente(Cliente cliente) {
+//    public Pessoa obterClientePorId(int id) {
+//        Pessoa c = null;
+//        for (Pessoa cliente : clientes){
+//            if (cliente.getIdCliente() == id){
+//                c = cliente;
+//            }
+//        }
+//        return c;
+//   }
+
+    public void removerCliente(Pessoa cliente) {
         if (cliente != null){
             clientes.remove(cliente);
         }
     }
 
-    public void atualizarCliente(Cliente cliente) {
-        if (cliente != null){
-            for (Cliente antigo : clientes){
-                if (antigo.getIdCliente() == cliente.getIdCliente()){  // se o id do cliente antigo for igual ao id do cliente novo, a atualização é feita
-                    antigo.setNome(cliente.getNome());
-                    antigo.setEmail(cliente.getEmail());
-                    antigo.setSenha(cliente.getSenha());
-                    antigo.setDataNascimento(cliente.getDataNascimento());
-                }
-            }
-        }
-    }
+    //Mexer dps pq não existe metodo de obter ID
+
+//    public void atualizarCliente(Pessoa cliente) {
+//        if (cliente != null){
+//            for (Pessoa antigo : clientes){
+//                if (antigo.getIdCliente() == cliente.getIdCliente()){  // se o id do cliente antigo for igual ao id do cliente novo, a atualização é feita
+//                    antigo.setNome(cliente.getNome());
+//                    antigo.setEmail(cliente.getEmail());
+//                    antigo.setSenha(cliente.getSenha());
+//                    antigo.setDataNascimento(cliente.getDataNascimento());
+//                }
+//            }
+//        }
+//    }
 
     /*public ArrayList<Cliente> listarClientesDoBancoDeDados (){
         return clientes;
